@@ -1,0 +1,47 @@
+[global]
+ ### Display & Position ###
+    font = Monospace 12
+    width = (0, 350)
+    height = (0, 600)
+    ignore_dbusclose = true
+    #browser = /usr/bin/xdg-open
+    mouse_left_click =  do_action, close_current
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_current
+    origin = top-center
+    offset = (500, 3)
+    alignment = center
+    padding = 5
+    horizontal_padding = 12
+    min_icon_size = 40
+    max_icon_size = 50
+    gap_size = 8
+    separator_height = 2
+    frame_width = 1
+    corner_radius = 12
+
+    # Progress Bar & Colors
+    highlight = "#6E5117"
+    separator_color = frame
+
+    ### High Contrast Text Formatting ###
+    # Summary (Cyan/color6) and Body (Pink/color5)
+    format = "<b><span foreground='#1D5F9E'>%s</span></b>\n<span foreground='#28955B'>%b</span>"
+
+[low]
+    background = "#212227"
+    foreground = "#E4EBE8"
+    frame_color = "#929995"
+    timeout = 5
+
+[normal]
+    background = "#212227"
+    foreground = "#E4EBE8"
+    frame_color = "#905123"
+    timeout = 6
+
+[critical]
+    background = "#212227"
+    foreground = "#623D12"
+    frame_color = "#623D12"
+    timeout = 7
